@@ -15,15 +15,45 @@
     "static/development/_middlewareManifest.js"
   ],
   "pages": {
-    "/Discount": [
+    "/Bettingcontrol": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Discount.js"
+      "static/chunks/pages/Bettingcontrol.js"
     ],
-    "/Subscriptions/SubscriptionManager": [
+    "/Claims": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Subscriptions/SubscriptionManager.js"
+      "static/chunks/pages/Claims.js"
+    ],
+    "/Competitions": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Competitions.js"
+    ],
+    "/Home": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Home.js"
+    ],
+    "/Login": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Login.js"
+    ],
+    "/Picks": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Picks.js"
+    ],
+    "/Subscriptions": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Subscriptions.js"
+    ],
+    "/Teams": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Teams.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
