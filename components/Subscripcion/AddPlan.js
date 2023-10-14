@@ -454,7 +454,7 @@ const AddPlan = ({
                         type="number"
                         value={values.warrantyPriceDollar}
                         variant="outline"
-                        isRequired
+                        // isRequired
                         isInvalid={errors.warrantyPriceDollar}
                         errorBorderColor="red"
                         onChange={handleChange('warrantyPriceDollar')}
@@ -490,7 +490,7 @@ const AddPlan = ({
                             children={i.country?.currencySymbol}
                           />
                           <NumberInput
-                            min={1}
+                            min={0}
                             max={
                               i.priceWarranty
                                 ? Number(i.priceWarranty) - 1
@@ -510,7 +510,7 @@ const AddPlan = ({
                           />
                           <NumberInput
                             defaultValue={i.priceWarranty}
-                            min={i.price ? Number(i.price) + 1 : undefined}
+                            // min={i.price ? Number(i.price) + 1 : undefined}
                             onChange={(e) =>
                               handleOnChangePriceWarranty(e, index)
                             }

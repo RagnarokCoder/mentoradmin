@@ -103,8 +103,8 @@ export const schemaForPlan = (
         },
         {
           type: 'min',
-          value: 1,
-          message: 'Price must be more than 0',
+          value: 0,
+          message: 'Price cannot be less than 0',
         },
       ],
     },
@@ -112,19 +112,15 @@ export const schemaForPlan = (
       name: 'warrantyPriceDollar',
       type: 'number',
       validations: [
-        {
-          type: 'required',
-          message: 'price in dollar is required.',
-        },
-        {
-          type: 'moreThan',
-          value: 'normalPriceDollar',
-          message: 'price in dollar is required.',
-        },
+        // {
+        //   type: 'moreThan',
+        //   value: 'normalPriceDollar',
+        //   message: 'price in dollar is required.',
+        // },
         {
           type: 'min',
-          value: 1,
-          message: 'Price must be more than 0',
+          value: 0,
+          message: 'Price cannot be less than 0',
         },
       ],
     },
@@ -191,8 +187,8 @@ export const schemaForMonthlyPlan = (
         },
         {
           type: 'min',
-          value: 1,
-          message: 'Price must be more than 0',
+          value: 0,
+          message: 'Price cannot be less than 0',
         },
       ],
     },
@@ -200,19 +196,15 @@ export const schemaForMonthlyPlan = (
       name: 'warrantyPriceDollar',
       type: 'number',
       validations: [
-        {
-          type: 'required',
-          message: 'price in dollar is required.',
-        },
-        {
-          type: 'moreThan',
-          value: 'normalPriceDollar',
-          message: 'price in dollar is required.',
-        },
+        // {
+        //   type: 'moreThan',
+        //   value: 'normalPriceDollar',
+        //   message: 'price in dollar is required.',
+        // },
         {
           type: 'min',
-          value: 1,
-          message: 'Price must be more than 0',
+          value: 0,
+          message: 'Price cannot be less than 0',
         },
       ],
     },

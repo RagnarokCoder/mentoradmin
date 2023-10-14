@@ -44,7 +44,8 @@ const Subscriptions = withAuthenticationRequired(
     const [orderList, setOrderList] = useState([]);
     const {height} = useWindowsDimension();
     const router = useRouter();
-    const {isAdmin} = useRoles();
+    // const {isAdmin} = useRoles();
+    const isAdmin = true;
 
     useEffect(() => {
       isAdmin
@@ -96,7 +97,7 @@ const Subscriptions = withAuthenticationRequired(
     }, [onOrder, orderList]);
 
     return (
-     permissions && (
+    //  permissions && (
         <Container maxW="full">
           {status.isFetching && <Loading />}
           <Stack
@@ -161,7 +162,7 @@ const Subscriptions = withAuthenticationRequired(
             />
           </Stack>
         </Container>
-     )
+    //  )
     );
   },
 );

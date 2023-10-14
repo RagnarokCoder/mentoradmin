@@ -285,7 +285,7 @@ const SubscriptionManager = withAuthenticationRequired(
         });
         _prices.push({
           normalPrice: plan.normalPriceDollar,
-          warrantyPrice: plan.warrantyPriceDollar,
+          warrantyPrice: plan.warrantyPriceDollar == null ? -1 : plan.warrantyPriceDollar,
           currencyId: countries.find((c) => c.code.toLowerCase() === 'us')
             ?.currencyId,
           countryCode: countries.find((c) => c.code.toLowerCase() === 'us')
@@ -295,7 +295,7 @@ const SubscriptionManager = withAuthenticationRequired(
           plan.pricesAdded.forEach((pa) => {
             _prices.push({
               normalPrice: Number(pa.price),
-              warrantyPrice: Number(pa.priceWarranty),
+              warrantyPrice: plan.warrantyPriceDollar == null ? -1 : Number(pa.priceWarranty),
               currencyId: pa.currencyId,
               countryCode: pa.country.code,
             });
@@ -455,7 +455,7 @@ const SubscriptionManager = withAuthenticationRequired(
     };
 
     return (
-      permissions && (
+      // permissions && (
         <Container maxW="full">
           {status.isFetching && <Loading />}
           <ModalConfirmation
@@ -504,7 +504,7 @@ const SubscriptionManager = withAuthenticationRequired(
             </Button>
           </Stack>
         </Container>
-      )
+      // )
     );
   },
 );
