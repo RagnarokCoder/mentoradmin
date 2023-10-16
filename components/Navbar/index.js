@@ -57,7 +57,7 @@ const Navbar = ({role}) => {
         bottom={0}>
         <Box mb="140px" style={{alignItems:"center", }}>
         <Box  style={{alignItems:"center", display:"flex", width: "220px"}}>
-          <Image m={12} src={Logo} alt="Logo" style={{alignItems: "center", width:"100%" }} />
+          <Image m={10} src={Logo} alt="Logo" style={{alignItems: "center", width:"50%" }} />
           </Box>
           {Menu.map((i) => (
             <Row key={i.text} item={i} option={i} onClick={handleOnClick} />

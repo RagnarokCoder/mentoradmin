@@ -198,7 +198,7 @@ const Discount = withAuthenticationRequired(
       }
     };
     return (
-      permissions && (
+      // permissions && (
         <Container maxW="full">
           <ModalConfirmation
             title="Error"
@@ -265,7 +265,7 @@ const Discount = withAuthenticationRequired(
             </Stack>
           </Stack>
         </Container>
-      )
+      // )
     );
   },
 );
