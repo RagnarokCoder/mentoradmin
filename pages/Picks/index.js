@@ -103,7 +103,8 @@ const Picks = withAuthenticationRequired(
     const [initialValues, setInitialValues] = useState();
     const [pickDraftList, setPickDraftList] = useState([]);
     const [pickList, setPickList] = useState([]);
-    const {isAdmin} = useRoles();
+    // const {isAdmin} = useRoles();
+    const {isAdmin} = true;
     useEffect(() => {
       onFetchSubscriptions({
         PreSaleDateEnd: new Date().toISOString().split('T')[0],
@@ -265,7 +266,7 @@ const Picks = withAuthenticationRequired(
     const handleOnChangeCompetition = (id) => setCompetitionId(id);
     const handleOnChangeSubscription = (id) => setSubscriptionId(id);
     return (
-      permissions && (
+      // permissions && (
         <Container maxW="full">
           <Text mb={8} fontWeight="bold" fontSize="18px">
             Todas tus picks
@@ -378,7 +379,7 @@ const Picks = withAuthenticationRequired(
             )}
           </Stack>
         </Container>
-      )
+      // )
     );
   },
 );

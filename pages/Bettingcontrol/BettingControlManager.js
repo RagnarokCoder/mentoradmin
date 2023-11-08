@@ -91,7 +91,7 @@ const BettingControlManager = withAuthenticationRequired(
       ],
     );
     return (
-      permissions && (
+      // permissions && (
         <Container maxW="full">
           <BettingControlForm
             initialValues={initialValues}
@@ -102,7 +102,7 @@ const BettingControlManager = withAuthenticationRequired(
             onSubmit={handleOnSubmit}
           />
         </Container>
-      )
+      // )
     );
   },
 );

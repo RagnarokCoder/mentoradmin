@@ -89,7 +89,8 @@ const Bettingcontrol = withAuthenticationRequired(
     const [pickNoControlledList, setPickNoControlledList] = useState([]);
     const [currentTab, setCurrentTab] = useState(0);
     const [initialValues, setInitialValues] = useState();
-    const {isAdmin} = useRoles();
+    // const {isAdmin} = useRoles();
+    const {isAdmin} = true;
 
     useEffect(() => {
       onFetchSubscriptions({
@@ -229,7 +230,7 @@ const Bettingcontrol = withAuthenticationRequired(
       ],
     );
     return (
-      permissions && (
+      // permissions && (
         <Container maxW="full" mt={30}>
           <Text mb={8} fontWeight="bold" fontSize="18px">
             Todas tus picks
@@ -338,7 +339,7 @@ const Bettingcontrol = withAuthenticationRequired(
             )}
           </Stack>
         </Container>
-      )
+      // )
     );
   },
 );

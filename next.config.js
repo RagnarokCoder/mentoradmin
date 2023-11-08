@@ -4,7 +4,8 @@ const withPWA = require('next-pwa');
 
 const enviroments = {
   DEV: {
-    api: 'https://apimentorbetsddev.azurewebsites.net/',
+    // api: 'https://apimentorbetsddev.azurewebsites.net/',
+    api: 'http://192.168.100.140/',
     clientIdAuth0: 'KJ7rRDDQdtvDUcejl7WsJbk7iyzUHTUY',
     domainAuth0: 'dev-t8rv4t8rt4dxhpiz.us.auth0.com',
   },
@@ -28,8 +29,8 @@ const {
   IDP_DOMAIN = '',
   USER_POOL_ID = '',
   USER_POOL_CLIENT_ID = '',
-  SITE_DOMAIN = 'localhost',
-  SITE_URL = 'http://localhost:3000',
+  SITE_DOMAIN = '192.168.100.140',
+  SITE_URL = 'http://192.168.100.140',
   DOMAIN_AUTH = getEnviroment().domainAuth0,
   CLIENT_ID_AUTH = getEnviroment().clientIdAuth0,
 } = process.env;
